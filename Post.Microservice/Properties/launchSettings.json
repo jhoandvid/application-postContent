@@ -1,0 +1,14 @@
+{
+  "profiles": {
+    "Post.Microservice": {
+      "commandName": "Project",
+      "commandLineArgs": "--port 7141"
+    },
+    "Docker": {
+      "commandName": "Docker",
+      "launchUrl": "{Scheme}://{ServiceHost}:{ServicePort}",
+      "httpPort": 31005,
+      "useSSL": false
+    }
+  }
+}

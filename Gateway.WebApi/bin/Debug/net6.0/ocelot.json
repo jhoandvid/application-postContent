@@ -1,0 +1,34 @@
+{
+
+
+  "Routes": [
+    {
+      "DownstreamPathTemplate": "/api/user/{url}",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 7257
+        }
+      ],
+      "UpstreamPathTemplate": "/api/user/{url}",
+      "UpstreamHttpMethod": [ "GET", "POST" ]
+
+    },
+    {
+      "DownstreamPathTemplate": "/api/post/{url}",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 7141
+        }
+      ],
+      "UpstreamPathTemplate": "/gateway/post",
+      "UpstreamHttpMethod": [ "GET" ]
+    }
+  ],
+  "GlobalConfiguration": {
+    "BaseUrl": "https://localhost:7135"
+  }
+}

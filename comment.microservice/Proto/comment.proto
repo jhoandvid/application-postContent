@@ -1,0 +1,98 @@
+﻿
+syntax = "proto3";
+
+package CommentApi;
+
+import "google/protobuf/timestamp.proto";
+
+service CommentGrpc {
+    rpc GetAllComment (GetCommentRequest) returns (GetCommentResponse);
+    rpc GetCommentById (GetCommentByIdRequest) returns (GetCommentByIdResponse);
+    rpc CountCommentByPostId(GetCountCommentRequest) returns (GetCountCommentResponse);
+    rpc CreateComment (CommentCreateRequest) returns(ResponseCreate);
+    rpc DeleteComment (GRPCommentDeleteRequest) returns (GRPCommentDeleteResponse);
+}
+
+
+message GetCountCommentRequest{
+    int32 postId=1;
+}
+
+message GetCountCommentResponse{
+    int32 countComment=1;
+}
+
+message GRPCommentDeleteRequest{
+    int32 id=1;
+    int32 userId=2;
+    int32 postId=3;
+}
+
+message GRPCommentDeleteResponse{
+    bool isSuccess=1;
+    string message=2;
+}
+
+
+message GrpcCommentModel{
+    int32 id=1;
+    int32 userId=2;
+    int32 postId=3;
+    optional int32 contentParentId=4;
+    string content=5;
+    //optional google.protobuf.Timestamp createAt = 6;
+    bool isActive =7;
+    //optional google.protobuf.Timestamp updateAt =8;
+    GrpcCommentModel comment=9;
+    repeated GrpcCommentModel contentParents=10;
+}
+
+message GetCommentByIdRequest{
+    int32 id=1; 
+}
+
+message GetCommentByIdResponse{
+   optional GrpcCommentModel Comment=1;
+}
+
+message GrpcCommentDto{
+    int32 id=1;
+    int32 userId=2;
+    int32 postId=3;
+    optional int32 contentParentId=4;
+    string content=5;
+    // optional google.protobuf.Timestamp createAt = 6;
+    bool isActive =7;
+    //optional google.protobuf.Timestamp updateAt =8;
+}
+
+
+message CommentCreateRequest{
+    int32 userId=1;
+    int32 postId=2;
+    optional int32 contentParentId=3;
+    string content=4;
+
+}
+
+message ResponseCreate{
+    //int32 id=1;
+    //int32 UserId=2;
+    //int32 PostId=3;
+    //string Content=4;
+    //optional google.protobuf.Timestamp createAt = 5;
+    //bool isActive =6;
+    //optional google.protobuf.Timestamp updateAt =7;
+    //Comment comment=8;
+    //repeated Comment contentParents=9;
+}
+
+message GetCommentResponse{
+    int32 count=1;
+    repeated GrpcCommentModel comment=2;
+}
+
+message GetCommentRequest{
+    int32 postId=1;
+}
+

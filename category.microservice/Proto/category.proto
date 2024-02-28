@@ -1,0 +1,21 @@
+﻿syntax = "proto3";
+
+package CategoryApi;
+
+service CategoryGrpc {
+	rpc GetCategoriesByIds (GetCategoryRequest) returns (GetCategoryResponse);
+
+}
+
+message GetCategoryRequest {
+	repeated int32 id=1;
+}
+
+message Category{
+	int32 id=1;
+	string name=2;
+}
+
+message GetCategoryResponse {
+	repeated Category category=1;
+}
