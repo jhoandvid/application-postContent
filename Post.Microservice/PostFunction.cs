@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Net;
@@ -37,11 +38,11 @@ namespace Post.Microservice
         [OpenApiResponseWithBody(statusCode: HttpStatusCode.OK, contentType: "application/json", bodyType: typeof(ApiResponse<PostDto>), Description = "The OK response")]
         [OpenApiRequestBody(contentType:"application/json", bodyType:typeof(CreatePost))]
         public async Task<IActionResult> CreatePost(
-            [HttpTrigger(AuthorizationLevel.Anonymous,  "post", Route = null)] CreatePost createPost)
+            [HttpTrigger(AuthorizationLevel.Anonymous,  "post", Route = "post/CreatePost")] CreatePost createPost)
         {
             var reponse = await _postService.CreatePost(createPost);
 
-            if (!reponse.Issuccess)
+            if (!reponse.IsSuccess)
             {
                 return new BadRequestObjectResult(reponse);
             }
@@ -54,11 +55,11 @@ namespace Post.Microservice
         [OpenApiOperation(operationId: "GetAllPost", tags: new[] { "Post" })]
         [OpenApiResponseWithBody(statusCode: HttpStatusCode.OK, contentType: "application/json", bodyType: typeof(ApiResponse<List<PostDto>>), Description = "The OK response")]
         public async Task<IActionResult> GetAllPost(
-            [HttpTrigger(AuthorizationLevel.Anonymous, "get", Route = null)] HttpRequest req)
+            [HttpTrigger(AuthorizationLevel.Anonymous, "get", Route = "post/GetAllPost")] HttpRequest req)
         {
             var response = await _postService.GetAllPost();
 
-            if (!response.Issuccess)
+            if (!response.IsSuccess)
             {
                 return new NotFoundObjectResult(response);
                 
@@ -71,13 +72,13 @@ namespace Post.Microservice
         [OpenApiOperation(operationId: "GetByIdPost", tags: new[] {"Post"})]
         [OpenApiParameter(name:"id")]
         [OpenApiResponseWithBody(statusCode:HttpStatusCode.OK,contentType:"application/json", bodyType:typeof(ApiResponse<PostDto>), Description = "The OK response")]
-        public async Task<IActionResult> GetByIdPost([HttpTrigger(AuthorizationLevel.Anonymous, "get", Route = "GetByIdPost/{id:int}")] HttpRequest req, int id) 
+        public async Task<IActionResult> GetByIdPost([HttpTrigger(AuthorizationLevel.Anonymous, "get", Route = "post/GetByIdPost/{id:int}")] HttpRequest req, int id) 
         {
-            var response = await _postService.GetPostById(id);
-            if (!response.Issuccess)
-            {
-                return new NotFoundObjectResult(response);
-            }
+                var response = await _postService.GetPostById(id);
+                if (!response.IsSuccess)
+                {
+                    return new NotFoundObjectResult(response);
+                }
             return new OkObjectResult(response);
         }
 
@@ -85,10 +86,10 @@ namespace Post.Microservice
         [OpenApiOperation(operationId: "DeletePost", tags: new[] { "Post" })]
         [OpenApiParameter(name: "id")]
         [OpenApiResponseWithBody(statusCode: HttpStatusCode.OK, contentType: "application/json", bodyType: typeof(ApiResponse<object>), Description = "The OK response")]
-        public async Task<IActionResult> DeletePost([HttpTrigger(AuthorizationLevel.Anonymous, "delete", Route = "DeleteByIdPost/{id:int}")] HttpRequest req, int id)
+        public async Task<IActionResult> DeletePost([HttpTrigger(AuthorizationLevel.Anonymous, "delete", Route = "post/DeleteByIdPost/{id:int}")] HttpRequest req, int id)
         {
            var response= await _postService.DeletePost(id);
-            if (!response.Issuccess)
+            if (!response.IsSuccess)
             {
                 return new NotFoundObjectResult(response);
             }

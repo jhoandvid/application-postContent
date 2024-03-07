@@ -36,3 +36,4 @@ D:\Cursos\C#\microservicio-gateway\microservice-webapi\Gateway.WebApi\obj\Debug\
 D:\Cursos\C#\microservicio-gateway\microservice-webapi\Gateway.WebApi\obj\Debug\net6.0\Gateway.WebApi.pdb
 D:\Cursos\C#\microservicio-gateway\microservice-webapi\Gateway.WebApi\obj\Debug\net6.0\Gateway.WebApi.genruntimeconfig.cache
 D:\Cursos\C#\microservicio-gateway\microservice-webapi\Gateway.WebApi\obj\Debug\net6.0\ref\Gateway.WebApi.dll
+D:\Cursos\C#\microservicio-gateway\microservice-webapi\Gateway.WebApi\obj\Debug\net6.0\Gateway.WebApi.sourcelink.json

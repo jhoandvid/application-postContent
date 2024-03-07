@@ -19,8 +19,7 @@ namespace Post.Microservice.External.ServicesGrpc
 
         }
 
-      
-
+    
         public async Task<List<CategoryDto>> GetAllCategoriesByIds(PostDto post)
         {
             var request = new GetCategoryRequest();
@@ -41,10 +40,10 @@ namespace Post.Microservice.External.ServicesGrpc
 
             if (idsNotFound.Any())
             {
-                return new ApiResponse<object>() { Issuccess = false, Messague = "Error al guardar las categorias, las categorias con los siguientes ids no existen", Result =  idsNotFound };
+                return new ApiResponse<object>() { IsSuccess = false, Messague = "Error al guardar las categorias, las categorias con los siguientes ids no existen", Result =  idsNotFound };
             }
 
-            return new ApiResponse<object>() { Issuccess = true, Result=null};
+            return new ApiResponse<object>() { IsSuccess = true, Result=null};
         }
     }
 }

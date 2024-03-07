@@ -4,8 +4,6 @@ using category.microservice.Model;
 using category.microservice.Repository;
 using CategoryApi;
 using Grpc.Core;
-using Microsoft.AspNetCore.Mvc;
-using System.Net.WebSockets;
 
 namespace category.microservice.Services
 {

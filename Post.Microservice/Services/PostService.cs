@@ -1,6 +1,7 @@
 ﻿using AutoMapper;
 using CategoryApi;
 using Google.Protobuf;
+using Grpc.Core;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Azure.WebJobs.Logging;
@@ -23,12 +24,14 @@ namespace Post.Microservice.Services
         private readonly IPostRepository _repository;
         private readonly ICategoryGrpcService _categoryGrpcService;
         private readonly ICommentGrpcService _commentGrpcService;
+        private readonly ILikeGrpcService _likeGrpcService;
         
-        public PostService(IMapper mapper, IPostRepository repository, ICategoryGrpcService categoryGrpcService, ICommentGrpcService commentGrpcService) {
+        public PostService(IMapper mapper, IPostRepository repository, ICategoryGrpcService categoryGrpcService, ICommentGrpcService commentGrpcService, ILikeGrpcService likeGrpcService) {
             _repository = repository;
             _mapper = mapper;
             _categoryGrpcService = categoryGrpcService;
             _commentGrpcService = commentGrpcService;
+            _likeGrpcService = likeGrpcService;
         }
         public async Task<ApiResponse<List<PostDto>>> GetAllPost()
         {
@@ -41,9 +44,10 @@ namespace Post.Microservice.Services
             {
                 post.Categories =await _categoryGrpcService.GetAllCategoriesByIds(post);
                 post.Comments = new List<CommentDto>();
-                post.CountComments=await _commentGrpcService.CountCommentByPost(post.Id);
+                post.CountComments=await _commentGrpcService.CountCommentByPost(post.Id);  
+                post.Likes=await _likeGrpcService.CountLikeByPost(post.Id);
             }
-            return new ApiResponse<List<PostDto>> () { Issuccess = true, Messague = "Ok", Result = postsDto }; ;
+            return new ApiResponse<List<PostDto>> () { IsSuccess = true, Messague = "Ok", Result = postsDto }; ;
         }
 
         public async Task<ApiResponse<object>> CreatePost(CreatePost post)
@@ -58,9 +62,9 @@ namespace Post.Microservice.Services
 
            
 
-            if (!validCategories.Issuccess)
+            if (!validCategories.IsSuccess)
             {
-                return new ApiResponse<object>() { Issuccess = false, Messague = "Error al guardar las categorias, las categorias con los siguientes ids no existen", Result = validCategories.Result }; ;
+                return new ApiResponse<object>() { IsSuccess = false, Messague = "Error al guardar las categorias, las categorias con los siguientes ids no existen", Result = validCategories.Result }; ;
             }
 
             var postModel = await _repository.CreatePost(post);
@@ -69,27 +73,66 @@ namespace Post.Microservice.Services
 
             postDto.Categories = categoriesDb;
 
-            return  new ApiResponse<object>() { Issuccess = true, Messague = "Ok", Result = postDto };
+            return  new ApiResponse<object>() { IsSuccess = true, Messague = "Ok", Result = postDto };
         }
 
 
         public async Task<ApiResponse<PostDto>> GetPostById(int id)
         {
-            var post=await _repository.GetPostById(id);
-
-            if (post == null)
+            try
             {
-                return new ApiResponse<PostDto>() { Issuccess = false, Messague = "El post no fue encontrado", Result = null }; ;
+
+
+                var post = await _repository.GetPostById(id);
+
+                if (post == null)
+                {
+                    return new ApiResponse<PostDto>() { IsSuccess = false, Messague = "El post no fue encontrado", Result = null }; ;
+                }
+
+                var postDto = _mapper.Map<PostDto>(post);
+
+                await this.EnrichPostDto(postDto);
+
+                await _likeGrpcService.CountLikeByComments(postDto.Comments);
+
+                return new ApiResponse<PostDto>() { IsSuccess = true, Messague = "Ok", Result = postDto };
+
+            } catch (Exception ex)
+            {
+                throw;
+                return new ApiResponse<PostDto>() { IsSuccess = false, Messague = "Ha ocurrido un error al procesar su solicitud", Result = null };
             }
+        }
 
-            var postDto= _mapper.Map<PostDto>(post);
-            var categoriesDb = await _categoryGrpcService.GetAllCategoriesByIds(postDto);
-            var comments = await _commentGrpcService.GetAllCommentByPost(id);
-            postDto.Categories= categoriesDb;
+
+        private async Task EnrichPostDto(PostDto postDto)
+        {
+            try
+            {
+
+            
+            var categoriesTask = _categoryGrpcService.GetAllCategoriesByIds(postDto);
+            var commentsTask = _commentGrpcService.GetAllCommentByPost(postDto.Id);
+            var likesTask = _likeGrpcService.CountLikeByPost(postDto.Id);
+
+            await Task.WhenAll(categoriesTask, commentsTask, likesTask);
+
+            var categoriesDb = await categoriesTask;
+            var comments = await commentsTask;
+            postDto.Categories = categoriesDb;
             postDto.Comments = comments;
+            postDto.Likes = await likesTask;
             postDto.CountComments = comments.Count;
-
-            return new ApiResponse<PostDto>() { Issuccess = true, Messague = "Ok", Result = postDto };
+            }
+            catch (RpcException rpcEx)
+            {
+                throw;
+            }
+            catch (Exception ex)
+            {
+                throw;
+            }
         }
 
         public async Task<ApiResponse<object>> DeletePost(int id)
@@ -97,10 +140,10 @@ namespace Post.Microservice.Services
            var isDelete=await _repository.DeletePost(id);
             if (!isDelete)
             {
-                return new ApiResponse<object>() { Issuccess=false, Messague="El post no fue encontrado", Result=null};
+                return new ApiResponse<object>() { IsSuccess =false, Messague="El post no fue encontrado", Result=null};
             }
 
-            return new ApiResponse<object>() { Issuccess = true, Messague = "Ok", Result = null };
+            return new ApiResponse<object>() { IsSuccess = true, Messague = "Ok", Result = null };
         }
 
      

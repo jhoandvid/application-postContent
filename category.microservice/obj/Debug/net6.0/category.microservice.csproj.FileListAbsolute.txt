@@ -72,3 +72,4 @@ D:\Cursos\C#\microservicio-gateway\microservice-webapi\category.microservice\obj
 D:\Cursos\C#\microservicio-gateway\microservice-webapi\category.microservice\obj\Debug\net6.0\category.microservice.pdb
 D:\Cursos\C#\microservicio-gateway\microservice-webapi\category.microservice\obj\Debug\net6.0\category.microservice.genruntimeconfig.cache
 D:\Cursos\C#\microservicio-gateway\microservice-webapi\category.microservice\obj\Debug\net6.0\ref\category.microservice.dll
+D:\Cursos\C#\microservicio-gateway\microservice-webapi\category.microservice\obj\Debug\net6.0\category.microservice.sourcelink.json

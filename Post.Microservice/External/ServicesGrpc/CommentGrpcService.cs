@@ -32,7 +32,7 @@ namespace Post.Microservice.External.ServicesGrpc
                 
                 var commentParentResponse= await this.GetCommentById(commentRequest.ContentParentId);
 
-                if (!commentParentResponse.Issuccess)
+                if (!commentParentResponse.IsSuccess)
                 {
                     return commentParentResponse;
                 }
@@ -52,7 +52,7 @@ namespace Post.Microservice.External.ServicesGrpc
             reqGrpcComment.UserId = idUser;
             reqGrpcComment.PostId = idPost;
             var responseGrpc=await _commentGrpcClient.DeleteCommentAsync(reqGrpcComment);
-            return new ApiResponse<object> { Issuccess=responseGrpc.IsSuccess, Messague=responseGrpc.Message, Result=null };
+            return new ApiResponse<object> { IsSuccess=responseGrpc.IsSuccess, Messague=responseGrpc.Message, Result=null };
         }
 
         public async Task<List<CommentDto>> GetAllCommentByPost(int idPost)
@@ -76,12 +76,12 @@ namespace Post.Microservice.External.ServicesGrpc
 
             if(responseComment.Comment == null)
             {
-                return new ApiResponse<CommentDto> { Issuccess = false, Messague = "El comentario padre no se encontro", Result = null };
+                return new ApiResponse<CommentDto> { IsSuccess = false, Messague = "El comentario padre no se encontro", Result = null };
             }
 
             var commentDto = _mapper.Map<CommentDto>(responseComment.Comment);
 
-            return new ApiResponse<CommentDto> { Issuccess = true, Messague = "Ok", Result = commentDto};
+            return new ApiResponse<CommentDto> { IsSuccess = true, Messague = "Ok", Result = commentDto};
 
         }
 
@@ -96,6 +96,8 @@ namespace Post.Microservice.External.ServicesGrpc
             var response= await _commentGrpcClient.CountCommentByPostIdAsync(getCountCommentRequest);
             return response.CountComment;
         }
+
+     
     }
 
 

@@ -1,6 +1,8 @@
 ﻿using AutoMapper;
 using CategoryApi;
 using CommentApi;
+using Google.Protobuf.WellKnownTypes;
+using like.microservice;
 using Post.Microservice.Dtos;
 using Post.Microservice.Dtos.externalDto;
 using Post.Microservice.Model;
@@ -22,7 +24,7 @@ namespace Post.Microservice.mapping
             CreateMap<PostCategoryModel, CategoryDto>().ReverseMap();
 
 
-            CreateMap<GrpcCommentModel, CommentDto>().ForMember(dest => dest.ContentsParents, opt => opt.MapFrom(src => src.ContentParents)).ReverseMap();
+            //CreateMap<GrpcCommentModel, CommentDto>().ForMember(dest => dest.ContentsParents, opt => opt.MapFrom(src => src.ContentParents)).ReverseMap();
 
 
             CreateMap<CreatePost, PostDto>()
@@ -37,6 +39,19 @@ namespace Post.Microservice.mapping
            .ForMember(dest => dest.Title, opt => opt.MapFrom(src => src.Title))
            .ForMember(dest => dest.Content, opt => opt.MapFrom(src => src.Content))
            .ForMember(dest => dest.IsActive, opt => opt.MapFrom(src => src.IsActive));
+
+
+
+            CreateMap<GrpcCommentModel, CommentDto>()
+            .ForMember(dest => dest.ContentsParents, opt => opt.MapFrom(src => src.ContentParents))
+            .ForMember(dest => dest.CreateAt, opt => opt.MapFrom(src => src.CreateAt == null ? (DateTime?)null : src.CreateAt.ToDateTime().ToUniversalTime()))
+            .ForMember(dest => dest.UpdateAt, opt => opt.MapFrom(src => src.UpdateAt == null ? (DateTime?)null : src.UpdateAt.ToDateTime().ToUniversalTime()))
+            .ReverseMap()
+            .ForMember(dest => dest.CreateAt, opt => opt.MapFrom(src => src.CreateAt == null ? null : Timestamp.FromDateTime(src.CreateAt.Value.ToUniversalTime())))
+            .ForMember(dest => dest.UpdateAt, opt => opt.MapFrom(src => src.UpdateAt == null ? null : Timestamp.FromDateTime(src.UpdateAt.Value.ToUniversalTime())));
+
+
+            CreateMap<CreateLikeDto, CreateLikeRequest>();
 
 
 

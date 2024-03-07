@@ -39,15 +39,9 @@ namespace comment.microservice.Services
 
             var idPost= request.PostId;
             var comments = await _repository.GetAllCommentsByPost(idPost);  
-
-           
             var countComment= await _repository.CountCommentByPost(idPost);
-
             response.Count = countComment;
-
             var commentGrpc = _mapper.Map<List<GrpcCommentModel>>(comments);
-
-
             response.Comment.AddRange(commentGrpc);
     
             return response;

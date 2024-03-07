@@ -8,7 +8,7 @@ namespace Post.Microservice.Dtos
 {
     public class ApiResponse<T>
     {
-        public bool Issuccess { get; set; }
+        public bool IsSuccess { get; set; }
         public string Messague { get; set; }
         public T? Result { get; set; }
     }

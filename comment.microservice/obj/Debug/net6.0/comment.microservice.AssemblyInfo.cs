@@ -15,7 +15,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("comment.microservice")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+2716d13cf5a7c4286fc0c297f2661997501caa22")]
 [assembly: System.Reflection.AssemblyProductAttribute("comment.microservice")]
 [assembly: System.Reflection.AssemblyTitleAttribute("comment.microservice")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

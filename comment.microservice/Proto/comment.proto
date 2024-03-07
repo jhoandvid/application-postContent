@@ -40,9 +40,9 @@ message GrpcCommentModel{
     int32 postId=3;
     optional int32 contentParentId=4;
     string content=5;
-    //optional google.protobuf.Timestamp createAt = 6;
+    optional google.protobuf.Timestamp createAt = 6;
     bool isActive =7;
-    //optional google.protobuf.Timestamp updateAt =8;
+    optional google.protobuf.Timestamp updateAt =8;
     GrpcCommentModel comment=9;
     repeated GrpcCommentModel contentParents=10;
 }
@@ -54,18 +54,6 @@ message GetCommentByIdRequest{
 message GetCommentByIdResponse{
    optional GrpcCommentModel Comment=1;
 }
-
-message GrpcCommentDto{
-    int32 id=1;
-    int32 userId=2;
-    int32 postId=3;
-    optional int32 contentParentId=4;
-    string content=5;
-    // optional google.protobuf.Timestamp createAt = 6;
-    bool isActive =7;
-    //optional google.protobuf.Timestamp updateAt =8;
-}
-
 
 message CommentCreateRequest{
     int32 userId=1;

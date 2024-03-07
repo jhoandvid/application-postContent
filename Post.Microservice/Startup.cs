@@ -1,8 +1,11 @@
 ﻿using CategoryApi;
 using CommentApi;
+using like.microservice;
 using Microsoft.Azure.Functions.Extensions.DependencyInjection;
+using Microsoft.Azure.WebJobs.Extensions.OpenApi.Core.Extensions;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
+using Microsoft.OpenApi.Models;
 using Post.Microservice.External;
 using Post.Microservice.External.ServicesGrpc;
 using Post.Microservice.Repository;
@@ -27,6 +30,11 @@ namespace Post.Microservice
 
             builder.Services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
 
+            builder.Services.AddSwaggerGen(c =>
+            {
+            
+                c.DescribeAllEnumsAsStrings();
+            });
 
             //GRPC
             builder.Services.AddGrpcClient<CategoryGrpc.CategoryGrpcClient>((services, options) =>
@@ -39,12 +47,18 @@ namespace Post.Microservice
                 options.Address = new Uri("https://localhost:7234");
             });
 
+            builder.Services.AddGrpcClient<likeGrpc.likeGrpcClient>((services, options) =>
+            {
+                options.Address = new Uri("http://localhost:5000");
+            });
+
 
             builder.Services.AddTransient<IPostRepository, PostRepository>();
+
             builder.Services.AddScoped<IPostService, PostService>();
             builder.Services.AddScoped<ICategoryGrpcService, CategoryGrpcService>();
             builder.Services.AddScoped<ICommentGrpcService, CommentGrpcService>();
-
+            builder.Services.AddScoped<ILikeGrpcService, LikeGrpcService>();
 
         }
     }

@@ -30,35 +30,34 @@ namespace CommentApi {
             "EhQKDGNvdW50Q29tbWVudBgBIAEoBSJFChdHUlBDb21tZW50RGVsZXRlUmVx",
             "dWVzdBIKCgJpZBgBIAEoBRIOCgZ1c2VySWQYAiABKAUSDgoGcG9zdElkGAMg",
             "ASgFIj4KGEdSUENvbW1lbnREZWxldGVSZXNwb25zZRIRCglpc1N1Y2Nlc3MY",
-            "ASABKAgSDwoHbWVzc2FnZRgCIAEoCSL4AQoQR3JwY0NvbW1lbnRNb2RlbBIK",
+            "ASABKAgSDwoHbWVzc2FnZRgCIAEoCSL4AgoQR3JwY0NvbW1lbnRNb2RlbBIK",
             "CgJpZBgBIAEoBRIOCgZ1c2VySWQYAiABKAUSDgoGcG9zdElkGAMgASgFEhwK",
             "D2NvbnRlbnRQYXJlbnRJZBgEIAEoBUgAiAEBEg8KB2NvbnRlbnQYBSABKAkS",
-            "EAoIaXNBY3RpdmUYByABKAgSLQoHY29tbWVudBgJIAEoCzIcLkNvbW1lbnRB",
-            "cGkuR3JwY0NvbW1lbnRNb2RlbBI0Cg5jb250ZW50UGFyZW50cxgKIAMoCzIc",
-            "LkNvbW1lbnRBcGkuR3JwY0NvbW1lbnRNb2RlbEISChBfY29udGVudFBhcmVu",
-            "dElkIiMKFUdldENvbW1lbnRCeUlkUmVxdWVzdBIKCgJpZBgBIAEoBSJYChZH",
-            "ZXRDb21tZW50QnlJZFJlc3BvbnNlEjIKB0NvbW1lbnQYASABKAsyHC5Db21t",
-            "ZW50QXBpLkdycGNDb21tZW50TW9kZWxIAIgBAUIKCghfQ29tbWVudCKRAQoO",
-            "R3JwY0NvbW1lbnREdG8SCgoCaWQYASABKAUSDgoGdXNlcklkGAIgASgFEg4K",
-            "BnBvc3RJZBgDIAEoBRIcCg9jb250ZW50UGFyZW50SWQYBCABKAVIAIgBARIP",
-            "Cgdjb250ZW50GAUgASgJEhAKCGlzQWN0aXZlGAcgASgIQhIKEF9jb250ZW50",
-            "UGFyZW50SWQieQoUQ29tbWVudENyZWF0ZVJlcXVlc3QSDgoGdXNlcklkGAEg",
-            "ASgFEg4KBnBvc3RJZBgCIAEoBRIcCg9jb250ZW50UGFyZW50SWQYAyABKAVI",
-            "AIgBARIPCgdjb250ZW50GAQgASgJQhIKEF9jb250ZW50UGFyZW50SWQiEAoO",
-            "UmVzcG9uc2VDcmVhdGUiUgoSR2V0Q29tbWVudFJlc3BvbnNlEg0KBWNvdW50",
-            "GAEgASgFEi0KB2NvbW1lbnQYAiADKAsyHC5Db21tZW50QXBpLkdycGNDb21t",
-            "ZW50TW9kZWwiIwoRR2V0Q29tbWVudFJlcXVlc3QSDgoGcG9zdElkGAEgASgF",
-            "MsIDCgtDb21tZW50R3JwYxJOCg1HZXRBbGxDb21tZW50Eh0uQ29tbWVudEFw",
-            "aS5HZXRDb21tZW50UmVxdWVzdBoeLkNvbW1lbnRBcGkuR2V0Q29tbWVudFJl",
-            "c3BvbnNlElcKDkdldENvbW1lbnRCeUlkEiEuQ29tbWVudEFwaS5HZXRDb21t",
-            "ZW50QnlJZFJlcXVlc3QaIi5Db21tZW50QXBpLkdldENvbW1lbnRCeUlkUmVz",
-            "cG9uc2USXwoUQ291bnRDb21tZW50QnlQb3N0SWQSIi5Db21tZW50QXBpLkdl",
-            "dENvdW50Q29tbWVudFJlcXVlc3QaIy5Db21tZW50QXBpLkdldENvdW50Q29t",
-            "bWVudFJlc3BvbnNlEk0KDUNyZWF0ZUNvbW1lbnQSIC5Db21tZW50QXBpLkNv",
-            "bW1lbnRDcmVhdGVSZXF1ZXN0GhouQ29tbWVudEFwaS5SZXNwb25zZUNyZWF0",
-            "ZRJaCg1EZWxldGVDb21tZW50EiMuQ29tbWVudEFwaS5HUlBDb21tZW50RGVs",
-            "ZXRlUmVxdWVzdBokLkNvbW1lbnRBcGkuR1JQQ29tbWVudERlbGV0ZVJlc3Bv",
-            "bnNlYgZwcm90bzM="));
+            "MQoIY3JlYXRlQXQYBiABKAsyGi5nb29nbGUucHJvdG9idWYuVGltZXN0YW1w",
+            "SAGIAQESEAoIaXNBY3RpdmUYByABKAgSMQoIdXBkYXRlQXQYCCABKAsyGi5n",
+            "b29nbGUucHJvdG9idWYuVGltZXN0YW1wSAKIAQESLQoHY29tbWVudBgJIAEo",
+            "CzIcLkNvbW1lbnRBcGkuR3JwY0NvbW1lbnRNb2RlbBI0Cg5jb250ZW50UGFy",
+            "ZW50cxgKIAMoCzIcLkNvbW1lbnRBcGkuR3JwY0NvbW1lbnRNb2RlbEISChBf",
+            "Y29udGVudFBhcmVudElkQgsKCV9jcmVhdGVBdEILCglfdXBkYXRlQXQiIwoV",
+            "R2V0Q29tbWVudEJ5SWRSZXF1ZXN0EgoKAmlkGAEgASgFIlgKFkdldENvbW1l",
+            "bnRCeUlkUmVzcG9uc2USMgoHQ29tbWVudBgBIAEoCzIcLkNvbW1lbnRBcGku",
+            "R3JwY0NvbW1lbnRNb2RlbEgAiAEBQgoKCF9Db21tZW50InkKFENvbW1lbnRD",
+            "cmVhdGVSZXF1ZXN0Eg4KBnVzZXJJZBgBIAEoBRIOCgZwb3N0SWQYAiABKAUS",
+            "HAoPY29udGVudFBhcmVudElkGAMgASgFSACIAQESDwoHY29udGVudBgEIAEo",
+            "CUISChBfY29udGVudFBhcmVudElkIhAKDlJlc3BvbnNlQ3JlYXRlIlIKEkdl",
+            "dENvbW1lbnRSZXNwb25zZRINCgVjb3VudBgBIAEoBRItCgdjb21tZW50GAIg",
+            "AygLMhwuQ29tbWVudEFwaS5HcnBjQ29tbWVudE1vZGVsIiMKEUdldENvbW1l",
+            "bnRSZXF1ZXN0Eg4KBnBvc3RJZBgBIAEoBTLCAwoLQ29tbWVudEdycGMSTgoN",
+            "R2V0QWxsQ29tbWVudBIdLkNvbW1lbnRBcGkuR2V0Q29tbWVudFJlcXVlc3Qa",
+            "Hi5Db21tZW50QXBpLkdldENvbW1lbnRSZXNwb25zZRJXCg5HZXRDb21tZW50",
+            "QnlJZBIhLkNvbW1lbnRBcGkuR2V0Q29tbWVudEJ5SWRSZXF1ZXN0GiIuQ29t",
+            "bWVudEFwaS5HZXRDb21tZW50QnlJZFJlc3BvbnNlEl8KFENvdW50Q29tbWVu",
+            "dEJ5UG9zdElkEiIuQ29tbWVudEFwaS5HZXRDb3VudENvbW1lbnRSZXF1ZXN0",
+            "GiMuQ29tbWVudEFwaS5HZXRDb3VudENvbW1lbnRSZXNwb25zZRJNCg1DcmVh",
+            "dGVDb21tZW50EiAuQ29tbWVudEFwaS5Db21tZW50Q3JlYXRlUmVxdWVzdBoa",
+            "LkNvbW1lbnRBcGkuUmVzcG9uc2VDcmVhdGUSWgoNRGVsZXRlQ29tbWVudBIj",
+            "LkNvbW1lbnRBcGkuR1JQQ29tbWVudERlbGV0ZVJlcXVlc3QaJC5Db21tZW50",
+            "QXBpLkdSUENvbW1lbnREZWxldGVSZXNwb25zZWIGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Google.Protobuf.WellKnownTypes.TimestampReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
@@ -66,10 +65,9 @@ namespace CommentApi {
             new pbr::GeneratedClrTypeInfo(typeof(global::CommentApi.GetCountCommentResponse), global::CommentApi.GetCountCommentResponse.Parser, new[]{ "CountComment" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::CommentApi.GRPCommentDeleteRequest), global::CommentApi.GRPCommentDeleteRequest.Parser, new[]{ "Id", "UserId", "PostId" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::CommentApi.GRPCommentDeleteResponse), global::CommentApi.GRPCommentDeleteResponse.Parser, new[]{ "IsSuccess", "Message" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::CommentApi.GrpcCommentModel), global::CommentApi.GrpcCommentModel.Parser, new[]{ "Id", "UserId", "PostId", "ContentParentId", "Content", "IsActive", "Comment", "ContentParents" }, new[]{ "ContentParentId" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::CommentApi.GrpcCommentModel), global::CommentApi.GrpcCommentModel.Parser, new[]{ "Id", "UserId", "PostId", "ContentParentId", "Content", "CreateAt", "IsActive", "UpdateAt", "Comment", "ContentParents" }, new[]{ "ContentParentId", "CreateAt", "UpdateAt" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::CommentApi.GetCommentByIdRequest), global::CommentApi.GetCommentByIdRequest.Parser, new[]{ "Id" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::CommentApi.GetCommentByIdResponse), global::CommentApi.GetCommentByIdResponse.Parser, new[]{ "Comment" }, new[]{ "Comment" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::CommentApi.GrpcCommentDto), global::CommentApi.GrpcCommentDto.Parser, new[]{ "Id", "UserId", "PostId", "ContentParentId", "Content", "IsActive" }, new[]{ "ContentParentId" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::CommentApi.CommentCreateRequest), global::CommentApi.CommentCreateRequest.Parser, new[]{ "UserId", "PostId", "ContentParentId", "Content" }, new[]{ "ContentParentId" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::CommentApi.ResponseCreate), global::CommentApi.ResponseCreate.Parser, null, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::CommentApi.GetCommentResponse), global::CommentApi.GetCommentResponse.Parser, new[]{ "Count", "Comment" }, null, null, null, null),
@@ -993,7 +991,9 @@ namespace CommentApi {
       postId_ = other.postId_;
       contentParentId_ = other.contentParentId_;
       content_ = other.content_;
+      createAt_ = other.createAt_ != null ? other.createAt_.Clone() : null;
       isActive_ = other.isActive_;
+      updateAt_ = other.updateAt_ != null ? other.updateAt_.Clone() : null;
       comment_ = other.comment_ != null ? other.comment_.Clone() : null;
       contentParents_ = other.contentParents_.Clone();
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
@@ -1080,12 +1080,21 @@ namespace CommentApi {
       }
     }
 
+    /// <summary>Field number for the "createAt" field.</summary>
+    public const int CreateAtFieldNumber = 6;
+    private global::Google.Protobuf.WellKnownTypes.Timestamp createAt_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public global::Google.Protobuf.WellKnownTypes.Timestamp CreateAt {
+      get { return createAt_; }
+      set {
+        createAt_ = value;
+      }
+    }
+
     /// <summary>Field number for the "isActive" field.</summary>
     public const int IsActiveFieldNumber = 7;
     private bool isActive_;
-    /// <summary>
-    ///optional google.protobuf.Timestamp createAt = 6;
-    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool IsActive {
@@ -1095,12 +1104,21 @@ namespace CommentApi {
       }
     }
 
+    /// <summary>Field number for the "updateAt" field.</summary>
+    public const int UpdateAtFieldNumber = 8;
+    private global::Google.Protobuf.WellKnownTypes.Timestamp updateAt_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public global::Google.Protobuf.WellKnownTypes.Timestamp UpdateAt {
+      get { return updateAt_; }
+      set {
+        updateAt_ = value;
+      }
+    }
+
     /// <summary>Field number for the "comment" field.</summary>
     public const int CommentFieldNumber = 9;
     private global::CommentApi.GrpcCommentModel comment_;
-    /// <summary>
-    ///optional google.protobuf.Timestamp updateAt =8;
-    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::CommentApi.GrpcCommentModel Comment {
@@ -1141,7 +1159,9 @@ namespace CommentApi {
       if (PostId != other.PostId) return false;
       if (ContentParentId != other.ContentParentId) return false;
       if (Content != other.Content) return false;
+      if (!object.Equals(CreateAt, other.CreateAt)) return false;
       if (IsActive != other.IsActive) return false;
+      if (!object.Equals(UpdateAt, other.UpdateAt)) return false;
       if (!object.Equals(Comment, other.Comment)) return false;
       if(!contentParents_.Equals(other.contentParents_)) return false;
       return Equals(_unknownFields, other._unknownFields);
@@ -1156,7 +1176,9 @@ namespace CommentApi {
       if (PostId != 0) hash ^= PostId.GetHashCode();
       if (HasContentParentId) hash ^= ContentParentId.GetHashCode();
       if (Content.Length != 0) hash ^= Content.GetHashCode();
+      if (createAt_ != null) hash ^= CreateAt.GetHashCode();
       if (IsActive != false) hash ^= IsActive.GetHashCode();
+      if (updateAt_ != null) hash ^= UpdateAt.GetHashCode();
       if (comment_ != null) hash ^= Comment.GetHashCode();
       hash ^= contentParents_.GetHashCode();
       if (_unknownFields != null) {
@@ -1197,9 +1219,17 @@ namespace CommentApi {
         output.WriteRawTag(42);
         output.WriteString(Content);
       }
+      if (createAt_ != null) {
+        output.WriteRawTag(50);
+        output.WriteMessage(CreateAt);
+      }
       if (IsActive != false) {
         output.WriteRawTag(56);
         output.WriteBool(IsActive);
+      }
+      if (updateAt_ != null) {
+        output.WriteRawTag(66);
+        output.WriteMessage(UpdateAt);
       }
       if (comment_ != null) {
         output.WriteRawTag(74);
@@ -1236,9 +1266,17 @@ namespace CommentApi {
         output.WriteRawTag(42);
         output.WriteString(Content);
       }
+      if (createAt_ != null) {
+        output.WriteRawTag(50);
+        output.WriteMessage(CreateAt);
+      }
       if (IsActive != false) {
         output.WriteRawTag(56);
         output.WriteBool(IsActive);
+      }
+      if (updateAt_ != null) {
+        output.WriteRawTag(66);
+        output.WriteMessage(UpdateAt);
       }
       if (comment_ != null) {
         output.WriteRawTag(74);
@@ -1270,8 +1308,14 @@ namespace CommentApi {
       if (Content.Length != 0) {
         size += 1 + pb::CodedOutputStream.ComputeStringSize(Content);
       }
+      if (createAt_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(CreateAt);
+      }
       if (IsActive != false) {
         size += 1 + 1;
+      }
+      if (updateAt_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(UpdateAt);
       }
       if (comment_ != null) {
         size += 1 + pb::CodedOutputStream.ComputeMessageSize(Comment);
@@ -1304,8 +1348,20 @@ namespace CommentApi {
       if (other.Content.Length != 0) {
         Content = other.Content;
       }
+      if (other.createAt_ != null) {
+        if (createAt_ == null) {
+          CreateAt = new global::Google.Protobuf.WellKnownTypes.Timestamp();
+        }
+        CreateAt.MergeFrom(other.CreateAt);
+      }
       if (other.IsActive != false) {
         IsActive = other.IsActive;
+      }
+      if (other.updateAt_ != null) {
+        if (updateAt_ == null) {
+          UpdateAt = new global::Google.Protobuf.WellKnownTypes.Timestamp();
+        }
+        UpdateAt.MergeFrom(other.UpdateAt);
       }
       if (other.comment_ != null) {
         if (comment_ == null) {
@@ -1349,8 +1405,22 @@ namespace CommentApi {
             Content = input.ReadString();
             break;
           }
+          case 50: {
+            if (createAt_ == null) {
+              CreateAt = new global::Google.Protobuf.WellKnownTypes.Timestamp();
+            }
+            input.ReadMessage(CreateAt);
+            break;
+          }
           case 56: {
             IsActive = input.ReadBool();
+            break;
+          }
+          case 66: {
+            if (updateAt_ == null) {
+              UpdateAt = new global::Google.Protobuf.WellKnownTypes.Timestamp();
+            }
+            input.ReadMessage(UpdateAt);
             break;
           }
           case 74: {
@@ -1399,8 +1469,22 @@ namespace CommentApi {
             Content = input.ReadString();
             break;
           }
+          case 50: {
+            if (createAt_ == null) {
+              CreateAt = new global::Google.Protobuf.WellKnownTypes.Timestamp();
+            }
+            input.ReadMessage(CreateAt);
+            break;
+          }
           case 56: {
             IsActive = input.ReadBool();
+            break;
+          }
+          case 66: {
+            if (updateAt_ == null) {
+              UpdateAt = new global::Google.Protobuf.WellKnownTypes.Timestamp();
+            }
+            input.ReadMessage(UpdateAt);
             break;
           }
           case 74: {
@@ -1811,401 +1895,6 @@ namespace CommentApi {
   }
 
   [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
-  public sealed partial class GrpcCommentDto : pb::IMessage<GrpcCommentDto>
-  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      , pb::IBufferMessage
-  #endif
-  {
-    private static readonly pb::MessageParser<GrpcCommentDto> _parser = new pb::MessageParser<GrpcCommentDto>(() => new GrpcCommentDto());
-    private pb::UnknownFieldSet _unknownFields;
-    private int _hasBits0;
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public static pb::MessageParser<GrpcCommentDto> Parser { get { return _parser; } }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public static pbr::MessageDescriptor Descriptor {
-      get { return global::CommentApi.CommentReflection.Descriptor.MessageTypes[7]; }
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    pbr::MessageDescriptor pb::IMessage.Descriptor {
-      get { return Descriptor; }
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public GrpcCommentDto() {
-      OnConstruction();
-    }
-
-    partial void OnConstruction();
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public GrpcCommentDto(GrpcCommentDto other) : this() {
-      _hasBits0 = other._hasBits0;
-      id_ = other.id_;
-      userId_ = other.userId_;
-      postId_ = other.postId_;
-      contentParentId_ = other.contentParentId_;
-      content_ = other.content_;
-      isActive_ = other.isActive_;
-      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public GrpcCommentDto Clone() {
-      return new GrpcCommentDto(this);
-    }
-
-    /// <summary>Field number for the "id" field.</summary>
-    public const int IdFieldNumber = 1;
-    private int id_;
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public int Id {
-      get { return id_; }
-      set {
-        id_ = value;
-      }
-    }
-
-    /// <summary>Field number for the "userId" field.</summary>
-    public const int UserIdFieldNumber = 2;
-    private int userId_;
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public int UserId {
-      get { return userId_; }
-      set {
-        userId_ = value;
-      }
-    }
-
-    /// <summary>Field number for the "postId" field.</summary>
-    public const int PostIdFieldNumber = 3;
-    private int postId_;
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public int PostId {
-      get { return postId_; }
-      set {
-        postId_ = value;
-      }
-    }
-
-    /// <summary>Field number for the "contentParentId" field.</summary>
-    public const int ContentParentIdFieldNumber = 4;
-    private readonly static int ContentParentIdDefaultValue = 0;
-
-    private int contentParentId_;
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public int ContentParentId {
-      get { if ((_hasBits0 & 1) != 0) { return contentParentId_; } else { return ContentParentIdDefaultValue; } }
-      set {
-        _hasBits0 |= 1;
-        contentParentId_ = value;
-      }
-    }
-    /// <summary>Gets whether the "contentParentId" field is set</summary>
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public bool HasContentParentId {
-      get { return (_hasBits0 & 1) != 0; }
-    }
-    /// <summary>Clears the value of the "contentParentId" field</summary>
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public void ClearContentParentId() {
-      _hasBits0 &= ~1;
-    }
-
-    /// <summary>Field number for the "content" field.</summary>
-    public const int ContentFieldNumber = 5;
-    private string content_ = "";
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public string Content {
-      get { return content_; }
-      set {
-        content_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
-      }
-    }
-
-    /// <summary>Field number for the "isActive" field.</summary>
-    public const int IsActiveFieldNumber = 7;
-    private bool isActive_;
-    /// <summary>
-    /// optional google.protobuf.Timestamp createAt = 6;
-    /// </summary>
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public bool IsActive {
-      get { return isActive_; }
-      set {
-        isActive_ = value;
-      }
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public override bool Equals(object other) {
-      return Equals(other as GrpcCommentDto);
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public bool Equals(GrpcCommentDto other) {
-      if (ReferenceEquals(other, null)) {
-        return false;
-      }
-      if (ReferenceEquals(other, this)) {
-        return true;
-      }
-      if (Id != other.Id) return false;
-      if (UserId != other.UserId) return false;
-      if (PostId != other.PostId) return false;
-      if (ContentParentId != other.ContentParentId) return false;
-      if (Content != other.Content) return false;
-      if (IsActive != other.IsActive) return false;
-      return Equals(_unknownFields, other._unknownFields);
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public override int GetHashCode() {
-      int hash = 1;
-      if (Id != 0) hash ^= Id.GetHashCode();
-      if (UserId != 0) hash ^= UserId.GetHashCode();
-      if (PostId != 0) hash ^= PostId.GetHashCode();
-      if (HasContentParentId) hash ^= ContentParentId.GetHashCode();
-      if (Content.Length != 0) hash ^= Content.GetHashCode();
-      if (IsActive != false) hash ^= IsActive.GetHashCode();
-      if (_unknownFields != null) {
-        hash ^= _unknownFields.GetHashCode();
-      }
-      return hash;
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public override string ToString() {
-      return pb::JsonFormatter.ToDiagnosticString(this);
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public void WriteTo(pb::CodedOutputStream output) {
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      output.WriteRawMessage(this);
-    #else
-      if (Id != 0) {
-        output.WriteRawTag(8);
-        output.WriteInt32(Id);
-      }
-      if (UserId != 0) {
-        output.WriteRawTag(16);
-        output.WriteInt32(UserId);
-      }
-      if (PostId != 0) {
-        output.WriteRawTag(24);
-        output.WriteInt32(PostId);
-      }
-      if (HasContentParentId) {
-        output.WriteRawTag(32);
-        output.WriteInt32(ContentParentId);
-      }
-      if (Content.Length != 0) {
-        output.WriteRawTag(42);
-        output.WriteString(Content);
-      }
-      if (IsActive != false) {
-        output.WriteRawTag(56);
-        output.WriteBool(IsActive);
-      }
-      if (_unknownFields != null) {
-        _unknownFields.WriteTo(output);
-      }
-    #endif
-    }
-
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
-      if (Id != 0) {
-        output.WriteRawTag(8);
-        output.WriteInt32(Id);
-      }
-      if (UserId != 0) {
-        output.WriteRawTag(16);
-        output.WriteInt32(UserId);
-      }
-      if (PostId != 0) {
-        output.WriteRawTag(24);
-        output.WriteInt32(PostId);
-      }
-      if (HasContentParentId) {
-        output.WriteRawTag(32);
-        output.WriteInt32(ContentParentId);
-      }
-      if (Content.Length != 0) {
-        output.WriteRawTag(42);
-        output.WriteString(Content);
-      }
-      if (IsActive != false) {
-        output.WriteRawTag(56);
-        output.WriteBool(IsActive);
-      }
-      if (_unknownFields != null) {
-        _unknownFields.WriteTo(ref output);
-      }
-    }
-    #endif
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public int CalculateSize() {
-      int size = 0;
-      if (Id != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeInt32Size(Id);
-      }
-      if (UserId != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeInt32Size(UserId);
-      }
-      if (PostId != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeInt32Size(PostId);
-      }
-      if (HasContentParentId) {
-        size += 1 + pb::CodedOutputStream.ComputeInt32Size(ContentParentId);
-      }
-      if (Content.Length != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeStringSize(Content);
-      }
-      if (IsActive != false) {
-        size += 1 + 1;
-      }
-      if (_unknownFields != null) {
-        size += _unknownFields.CalculateSize();
-      }
-      return size;
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public void MergeFrom(GrpcCommentDto other) {
-      if (other == null) {
-        return;
-      }
-      if (other.Id != 0) {
-        Id = other.Id;
-      }
-      if (other.UserId != 0) {
-        UserId = other.UserId;
-      }
-      if (other.PostId != 0) {
-        PostId = other.PostId;
-      }
-      if (other.HasContentParentId) {
-        ContentParentId = other.ContentParentId;
-      }
-      if (other.Content.Length != 0) {
-        Content = other.Content;
-      }
-      if (other.IsActive != false) {
-        IsActive = other.IsActive;
-      }
-      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public void MergeFrom(pb::CodedInputStream input) {
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      input.ReadRawMessage(this);
-    #else
-      uint tag;
-      while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
-          default:
-            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
-            break;
-          case 8: {
-            Id = input.ReadInt32();
-            break;
-          }
-          case 16: {
-            UserId = input.ReadInt32();
-            break;
-          }
-          case 24: {
-            PostId = input.ReadInt32();
-            break;
-          }
-          case 32: {
-            ContentParentId = input.ReadInt32();
-            break;
-          }
-          case 42: {
-            Content = input.ReadString();
-            break;
-          }
-          case 56: {
-            IsActive = input.ReadBool();
-            break;
-          }
-        }
-      }
-    #endif
-    }
-
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
-      uint tag;
-      while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
-          default:
-            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
-            break;
-          case 8: {
-            Id = input.ReadInt32();
-            break;
-          }
-          case 16: {
-            UserId = input.ReadInt32();
-            break;
-          }
-          case 24: {
-            PostId = input.ReadInt32();
-            break;
-          }
-          case 32: {
-            ContentParentId = input.ReadInt32();
-            break;
-          }
-          case 42: {
-            Content = input.ReadString();
-            break;
-          }
-          case 56: {
-            IsActive = input.ReadBool();
-            break;
-          }
-        }
-      }
-    }
-    #endif
-
-  }
-
-  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class CommentCreateRequest : pb::IMessage<CommentCreateRequest>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -2221,7 +1910,7 @@ namespace CommentApi {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::CommentApi.CommentReflection.Descriptor.MessageTypes[8]; }
+      get { return global::CommentApi.CommentReflection.Descriptor.MessageTypes[7]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -2549,7 +2238,7 @@ namespace CommentApi {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::CommentApi.CommentReflection.Descriptor.MessageTypes[9]; }
+      get { return global::CommentApi.CommentReflection.Descriptor.MessageTypes[8]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -2702,7 +2391,7 @@ namespace CommentApi {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::CommentApi.CommentReflection.Descriptor.MessageTypes[10]; }
+      get { return global::CommentApi.CommentReflection.Descriptor.MessageTypes[9]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -2918,7 +2607,7 @@ namespace CommentApi {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::CommentApi.CommentReflection.Descriptor.MessageTypes[11]; }
+      get { return global::CommentApi.CommentReflection.Descriptor.MessageTypes[10]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]

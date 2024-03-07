@@ -11,9 +11,6 @@ namespace Post.Microservice.Services
 {
     public interface IPostRepository
     {
-
-
-
         public Task<List<PostModel>> GetAllPost();
 
         public Task<PostModel> GetPostById(int id);

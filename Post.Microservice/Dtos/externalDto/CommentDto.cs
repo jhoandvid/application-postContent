@@ -12,7 +12,9 @@ namespace Post.Microservice.Dtos.externalDto
         public int PostId { get; set; }
         public bool IsActive { get; set; }
         public string Content { get; set; }
+        public int CountLike { get; set; }
         public DateTime? CreateAt { get; set; }
+        public DateTime? UpdateAt { get; set; }
         public int? ContentParentId { get; set; }
         public List<CommentDto> ContentsParents { get; set; }
     }

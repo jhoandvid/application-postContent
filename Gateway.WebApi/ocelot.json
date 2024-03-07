@@ -17,15 +17,15 @@
     },
     {
       "DownstreamPathTemplate": "/api/post/{url}",
-      "DownstreamScheme": "https",
+      "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
           "Host": "localhost",
           "Port": 7141
         }
       ],
-      "UpstreamPathTemplate": "/gateway/post",
-      "UpstreamHttpMethod": [ "GET" ]
+      "UpstreamPathTemplate": "/gateway/post/{url}",
+      "UpstreamHttpMethod": [ "GET", "POST", "DELETE" ]
     }
   ],
   "GlobalConfiguration": {

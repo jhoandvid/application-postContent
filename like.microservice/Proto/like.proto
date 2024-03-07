@@ -1,0 +1,68 @@
+syntax = "proto3";
+
+option csharp_namespace = "like.microservice";
+
+package like;
+
+import "google/protobuf/timestamp.proto";
+
+
+service likeGrpc {
+  rpc CountLikeByComment (CountLikeByCommentRequest) returns (CountLikeByCommentResponse);
+  rpc CountLikeByPost (CountLikeByPostRequest) returns (CountLikeByPostResponse);
+  rpc DeleteLikeByPost (DeleteLikeByPostRequest) returns (DeleteLikeByPostResponse);
+  rpc DeleteLikeByComment (DeleteLikeByCommentRequest) returns (DeleteLikeByCommentResponse);
+  rpc CreateLike(CreateLikeRequest) returns (CreateLikeResponse);
+}
+
+message CountLikeByCommentRequest {
+  int32 commentId = 1;
+ 
+}
+
+message CountLikeByCommentResponse {
+  int32 countLikeComment=1;
+}
+
+message CountLikeByPostRequest {
+  int32 postId = 1;
+
+}
+
+message CountLikeByPostResponse {
+  int32 countLikePost=1;
+}
+
+
+message DeleteLikeByPostRequest {
+  int32 postId = 1;
+   int32 userId=2;
+}
+
+message DeleteLikeByPostResponse {
+  
+}
+
+message DeleteLikeByCommentRequest {
+  int32 commentId = 1;
+     int32 userId=2;
+}
+
+message DeleteLikeByCommentResponse {
+  
+}
+
+
+message CreateLikeRequest{
+    int32 userId=1;
+    optional int32 postId=2;
+    optional int32 CommentId=3;
+    string contentType=4;
+    
+}
+
+message CreateLikeResponse{
+
+}
+
+ 

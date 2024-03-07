@@ -18,5 +18,7 @@ namespace Post.Microservice.External
 
         public Task<int> CountCommentByPost(int postId);
         public Task<ApiResponse<CommentDto>> GetCommentById(int id);
+
+       
     }
 }
